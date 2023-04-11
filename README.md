@@ -1,6 +1,6 @@
 # Internal-Comms
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/23e6b1fe-0645-4316-a4da-7b06ece91d13/deploy-status)](https://app.netlify.com/sites/internalcomms/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0e1c6867-58a4-4bc8-b988-961468c2315d/deploy-status)](https://app.netlify.com/sites/internalcomms/deploys)
 
 A light, simple and dynamic ticketing system that will help small businesses keep track of what is important.
 
