@@ -14,24 +14,18 @@ The following is a set of guidelines for contributing to Internal-Comms. These a
 
 [How Can I Contribute?](#how-can-i-contribute)
 
-- [Reporting Bugs](#reporting-bugs)
-- [Your First Code Contribution](#your-first-code-contribution)
-- [Pull Requests](#pull-requests)
+-   [Reporting Bugs](#reporting-bugs)
+-   [Your First Code Contribution](#your-first-code-contribution)
+-   [Pull Requests](#pull-requests)
 
 [Styleguides](#styleguides)
 
-- [Git Commit Messages](#git-commit-messages)
-- [JavaScript Styleguide](#javascript-styleguide)
+-   [Git Commit Messages](#git-commit-messages)
+-   [JavaScript Styleguide](#javascript-styleguide)
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Internal-Comms Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [info@sylvaindessureault.com](mailto:info@sylvaindessureault.com)..
-
-## I just have a question!
-
-> **Note:** please don't file an issue to ask a question. You'll get faster results by using the resources below.
-
-Send me a quick email at [info@sylvaindessureault.com](mailto:info@sylvaindessureault.com).
+This project and everyone participating in it is governed by the [Internal-Comms Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ## Before Getting Started
 
@@ -61,7 +55,7 @@ Before creating bug reports, please check [this list](https://github.com/syldess
 
 We have made a list to make it easy for you:
 
-- [Beginner issues](#!) - issues which should only require a few lines of code.
+-   [Beginner issues](#!) - issues which should only require a few lines of code.
 
 ### Pull Requests
 
@@ -71,19 +65,19 @@ Please follow all instructions in [the template](#!)
 
 ### Git Commit Messages
 
-- Use the present tense ("Add feature" not "Added feature")
-- Use the imperative mood
-- Limit the first line to 72 characters or less
-- Reference issues and pull requests
-- Consider starting the commit message with an applicable emoji:
-  - :tada: `:tada:` when adding a big feature
-  - :beetle: `:beetle:` when fixing a bug
-  - :hammer: `:hammer:` when refactoring or improving the format/structure of the code
-  - :zap: `:zap:` when adding a quick fix
-  - :memo: `:memo:` when writing docs
-  - :pencil2: `:pencil2:` when fixing a typo
-  - :running: `:running:` when improving performance
-  - :lock: `:lock:` when dealing with security
+-   Use the present tense ("Add feature" not "Added feature")
+-   Use the imperative mood
+-   Limit the first line to 72 characters or less
+-   Reference issues and pull requests
+-   Consider starting the commit message with an applicable emoji:
+    -   :tada: `:tada:` when adding a big feature
+    -   :beetle: `:beetle:` when fixing a bug
+    -   :hammer: `:hammer:` when refactoring or improving the format/structure of the code
+    -   :zap: `:zap:` when adding a quick fix
+    -   :memo: `:memo:` when writing docs
+    -   :pencil2: `:pencil2:` when fixing a typo
+    -   :running: `:running:` when improving performance
+    -   :lock: `:lock:` when dealing with security
 
 ### JavaScript Styleguide
 
