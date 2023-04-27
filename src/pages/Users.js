@@ -6,7 +6,7 @@ import SubMenu from '../components/SubMenu';
 import ResourceAdd from '../components/ResourceAdd';
 import ResourceEdit from '../components/ResourceEdit';
 import { addUser, updateUser, deleteUser } from '../actions/userActions';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 import { usersInitialState } from '../seeders/usersInitialState';
 
 class Users extends React.Component {
@@ -112,7 +112,7 @@ class Users extends React.Component {
     if (this.props.users) {
       userList = this.props.users.map((user) => {
         return (
-          <div className="column" key={uuid()}>
+          <div className="column" key={uuidv4()}>
             <UserDisplay
               name={user.name}
               role={user.role}

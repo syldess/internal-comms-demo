@@ -1,5 +1,5 @@
 import React from 'react';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 const SideBar = (props) => {
   return (
@@ -11,7 +11,7 @@ const SideBar = (props) => {
         return (
           <div
             className="ui item button"
-            key={uuid()}
+            key={uuidv4()}
             onClick={action}
             style={styles.sidebarBtn}
           >

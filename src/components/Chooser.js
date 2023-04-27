@@ -1,6 +1,6 @@
 import React from 'react';
 import Toggler from './Toggler';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 const Chooser = (props) => {
   return (
@@ -18,7 +18,7 @@ const Chooser = (props) => {
                 title={role}
                 attribute={props.type}
                 toggle={props.toggle}
-                key={uuid()}
+                key={uuidv4()}
               />
             ) : null
           )}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dropdown from './custom-dropdown/dropdown/Dropdown';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 import { generateRandomPicture } from '../utils/randomPictures';
 
 class ResourceEdit extends Component {
@@ -63,7 +63,7 @@ class ResourceEdit extends Component {
     if (inputsList) {
       return inputsList.map((input) => {
         return (
-          <div className="ui input" key={uuid()}>
+          <div className="ui input" key={uuidv4()}>
             <input
               type={input.type}
               maxLength="55"
@@ -81,7 +81,7 @@ class ResourceEdit extends Component {
     if (dropdownsList) {
       return dropdownsList.map((dropdown) => {
         return (
-          <div className="content" key={uuid()}>
+          <div className="content" key={uuidv4()}>
             <div className="ui">
               <Dropdown
                 customBtnStyle={{

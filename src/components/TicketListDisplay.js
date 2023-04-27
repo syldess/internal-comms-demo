@@ -1,5 +1,5 @@
 import React from 'react';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 const TicketListDisplay = ({
   ticket,
@@ -9,7 +9,7 @@ const TicketListDisplay = ({
   getTicket,
 }) => {
   return (
-    <div className="item" onClick={() => getTicket(ticket)} key={uuid()}>
+    <div className="item" onClick={() => getTicket(ticket)} key={uuidv4()}>
       <div>
         <label className="ui brown horizontal label">{ticket.department}</label>
         <label className="ui red horizontal label">{ticket.priority}</label>
