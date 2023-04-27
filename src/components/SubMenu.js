@@ -1,5 +1,5 @@
 import React from 'react';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 class SubMenu extends React.Component {
   state = {
@@ -39,7 +39,7 @@ class SubMenu extends React.Component {
                   className={
                     menuItem.className ? menuItem.className : 'ui item button'
                   }
-                  key={uuid()}
+                  key={uuidv4()}
                   onClick={menuItem.action}
                 >
                   <i className={`${menuItem.icon} icon`}></i>

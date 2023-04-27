@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { signIn, signOut } from '../actions/authActions';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 class SimAuth extends React.Component {
   handleAuthStatus = (isSignedIn) => {
     if (isSignedIn) {
-      this.props.signIn(uuid());
+      this.props.signIn(uuidv4());
     } else {
       this.props.signOut();
     }

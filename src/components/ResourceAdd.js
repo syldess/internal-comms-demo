@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Dropdown from './custom-dropdown/dropdown/Dropdown';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 import { generateRandomPicture } from '../utils/randomPictures';
 
 class ResourceAdd extends Component {
   state = {
     picture: false,
-    resourceForm: { id: uuid() },
+    resourceForm: { id: uuidv4() },
   };
 
   togglePicture = () => {
@@ -83,7 +83,7 @@ class ResourceAdd extends Component {
               {this.props.dropdowns
                 ? this.props.dropdowns.map((dropdown) => {
                     return (
-                      <div className="content" key={uuid()}>
+                      <div className="content" key={uuidv4()}>
                         <div className="ui ">
                           <Dropdown
                             customBtnStyle={{

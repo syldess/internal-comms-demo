@@ -11,7 +11,7 @@ import {
   deleteDepartment,
 } from '../actions/departmentActions';
 import { departmentsInitialState } from '../seeders/departmentsInitialState';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 class Departments extends React.Component {
   state = departmentsInitialState;
@@ -100,7 +100,7 @@ class Departments extends React.Component {
     if (this.props.departments) {
       departmentList = this.props.departments.map((dpt) => {
         return (
-          <div className="column" key={uuid()}>
+          <div className="column" key={uuidv4()}>
             <DepartmenDisplay
               name={dpt.name}
               description={dpt.description}

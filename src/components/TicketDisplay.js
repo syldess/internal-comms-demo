@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextArea, Form } from 'semantic-ui-react';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 import Dropdown from './custom-dropdown/dropdown/Dropdown';
 
 class TicketDisplay extends React.Component {
@@ -158,7 +158,7 @@ class TicketDisplay extends React.Component {
           <div>
             <div>
               {ticket.description.split('\n').map((line) => (
-                <p key={uuid()}>{line}</p>
+                <p key={uuidv4()}>{line}</p>
               ))}
             </div>
             <p style={styles.innerFooter}>

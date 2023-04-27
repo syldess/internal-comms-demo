@@ -20,7 +20,7 @@ import { ticketsByStatusUsersCalc } from '../utils/statistics/ticketsByStatusUse
 
 import { connect } from 'react-redux';
 import { generateColors } from '../utils/colors/generateColors';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 class Dashboard extends Component {
   state = {
@@ -293,7 +293,7 @@ class Dashboard extends Component {
       const chart = item.title.toLocaleLowerCase();
       if (this.state[chart].show) {
         allCharts.push(
-          <ChartsContainer charts={this.state[chart].charts} key={uuid()} />
+          <ChartsContainer charts={this.state[chart].charts} key={uuidv4()} />
         );
       }
     }

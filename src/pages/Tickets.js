@@ -11,7 +11,7 @@ import TicketDisplay from '../components/TicketDisplay';
 import TicketLog from '../components/TicketLog';
 import TicketLogDisplay from '../components/TicketLogDisplay';
 import AddTicket from '../components/AddTicket';
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 import Alert from '../components/Alert';
 import {
   ticketsCategoriesFilter,
@@ -143,7 +143,7 @@ class Tickets extends React.Component {
               LabelStyle={styles.labels}
               titleStyle={styles.title}
               getTicket={this.getTicket}
-              key={uuid()}
+              key={uuidv4()}
             />
           ) : null
         ) : null
@@ -240,7 +240,7 @@ class Tickets extends React.Component {
 
   getLogs = (ticket) => {
     const logs = ticket.logs.map((log) => {
-      return <TicketLogDisplay log={log} key={uuid()} />;
+      return <TicketLogDisplay log={log} key={uuidv4()} />;
     });
     return (
       <TicketLog
