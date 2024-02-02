@@ -6,8 +6,6 @@ A light, simple and dynamic ticketing system that will help small businesses kee
 
 ![](homepage-internal-comms.PNG)
 
-_For more examples and usage, please refer to the [Wiki](https://github.com/syldess/internal-comms-demo/wiki)._ (**coming soon**)
-
 ## Purpose
 
 Internal-Comms was initially designed to be a MERN stack application to be used by small businesses.
