@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextArea, Form } from 'semantic-ui-react';
+import { TextArea, Form, Message} from 'semantic-ui-react';
 import Dropdown from './custom-dropdown/dropdown/Dropdown';
 import { getDate } from '../utils/date/dates';
 
@@ -45,19 +45,26 @@ class AddTicket extends React.Component {
     const { subject, description, priority, status, department } =
       this.state.ticket;
     if (!subject || !description || !priority || !status || !department) {
-      // TODO: handle field errors
-      console.log('HANDLE EMPTY ERROR!');
+      this.setState({ error: true });
+      return;
     } else {
+      this.setState({ error: false });
       this.props.saveTicket(this.state.ticket);
     }
   };
 
   render() {
     const {
-      ticket: { createdOn, createdBy },
+      ticket: { createdOn, createdBy }, error,
     } = this.state;
     return (
       <div className="ui column">
+        {error && (
+          <Message negative>
+            <Message.Header>Error</Message.Header>
+            <p>Please fill in Subject and Body and choose Department, Priority and Status before submitting the ticket.</p>
+          </Message>
+        )}        
         <div style={styles.container}>
           <div className="ui input header" style={styles.input}>
             <input
